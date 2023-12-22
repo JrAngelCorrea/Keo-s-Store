@@ -1,0 +1,177 @@
+/* Paleta de colores */
+
+:root{
+    --blanco: #ffffff;
+    --black: #000;
+    --morado: #633974;
+    --grisClaro: #E5E8E8;
+}
+
+/* Global */
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;/* 1rem = 10px*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+/* .shadow{ 
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(125,125,125,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(125,125,125,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(125,125,125,0.54);
+} */
+
+/* Menu Principal */
+
+/** Dos maneras de hacer un menu **/
+
+
+/*
+.logo{
+    padding: 10px 55px;
+    max-width: 210px;
+}
+
+.nav__pri{
+    display: flex;
+}
+
+.menu__items{
+    margin: 3rem 40rem;
+}
+
+.menu__items a{
+    padding-right: 2rem;
+    font-size: 15px;
+}
+
+.menu__items a:hover{
+    text-decoration: underline;
+}
+
+*/
+
+
+.nav__pri{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    max-width: 210px;
+    padding: 15px 55px;
+}
+
+.menu__items{
+    display: flex;
+    margin-right: 11rem;
+}
+
+.menu__items a{
+    padding: 1.5rem 1.2rem;
+    font-size: 1.5rem;
+}
+
+.menu__items a:hover{
+    text-decoration: underline;
+}
+
+.icons{
+    margin-right: 5rem;
+}
+
+.icons a{
+    padding: 1.5rem 1.0rem;
+}
+
+/* Productos */
+
+.cont__pri{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.all{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.productos p{
+    text-align: justify;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.productos:hover{
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--grisClaro);
+    padding: 10rem;
+}
+
+footer p{
+    font-weight: bold;
+}
+
+.union{
+    display: flex;
+    flex-direction: row;
+}
+
+.foot{
+    display: flex;
+}
+
+.foot a{
+    padding-right: 3rem;
+}
+
+.foot a:hover{
+    text-decoration: underline;
+}
